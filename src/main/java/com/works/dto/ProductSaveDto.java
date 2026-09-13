@@ -1,9 +1,11 @@
 package com.works.dto;
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.Value;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * DTO for {@link com.works.entitiy.Product}
@@ -20,9 +22,9 @@ public class ProductSaveDto implements Serializable {
     String description;
     @NotNull
     @Min(1)
-    @Max(1000000)
+    @Max(10000000)
     Double price;
     @NotNull
-    @NotEmpty
-    String category;
+    @Size(min = 1, max = 10)
+    List<@Valid CategoryDto> categories;
 }

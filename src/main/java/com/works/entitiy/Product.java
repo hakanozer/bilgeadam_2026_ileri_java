@@ -3,6 +3,8 @@ package com.works.entitiy;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Entity
 @Data
 public class Product {
@@ -14,6 +16,8 @@ public class Product {
     private String title;
     private String description;
     private Double price;
-    private String category;
+
+    @ManyToMany
+    private List<Category> categories;
 
 }
