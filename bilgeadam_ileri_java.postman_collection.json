@@ -1,0 +1,195 @@
+{
+  "info": {
+    "_postman_id": "8875cd0b-53d3-4ec9-bbf4-2a78f8314f92",
+    "name": "bilgeadam_ileri_java",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1939021",
+    "_collection_link": "https://go.postman.co/collection/1939021-8875cd0b-53d3-4ec9-bbf4-2a78f8314f92?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Product Save",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"iPhone TT\",\n    \"description\": \"iPhone TT Detay\",\n    \"price\": 130000,\n    \"categories\": [\n        {\"id\": 1}\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/api/product/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "product",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product SaveAll",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\n    \"title\": \"Samsung 55 İnç 4K Smart TV\",\n    \"description\": \"55 inç 4K UHD çözünürlüklü akıllı televizyon.\",\n    \"price\": 10000,\n    \"categories\": [\n      { \"id\": 2 },\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Xiaomi Robot Süpürge\",\n    \"description\": \"Akıllı haritalama ve paspas özellikli robot süpürge.\",\n    \"price\": 15999,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Philips Airfryer XXL\",\n    \"description\": \"Geniş hazneli sıcak hava fritözü.\",\n    \"price\": 8499,\n    \"categories\": [\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Bosch Bulaşık Makinesi\",\n    \"description\": \"Enerji tasarruflu ve geniş kapasiteli bulaşık makinesi.\",\n    \"price\": 24999,\n    \"categories\": [\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Dyson Dikey Süpürge\",\n    \"description\": \"Kablosuz ve güçlü emiş özellikli dikey süpürge.\",\n    \"price\": 23999,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"IKEA Çalışma Masası\",\n    \"description\": \"Ev ve ofis kullanımı için modern çalışma masası.\",\n    \"price\": 6499,\n    \"categories\": [\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Bellona Köşe Koltuk\",\n    \"description\": \"Geniş oturum alanına sahip modern köşe koltuk takımı.\",\n    \"price\": 32999,\n    \"categories\": [\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Arçelik Buzdolabı\",\n    \"description\": \"Geniş iç hacimli No Frost buzdolabı.\",\n    \"price\": 35999,\n    \"categories\": [\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Tefal Elektrikli Izgara\",\n    \"description\": \"Ev kullanımı için ayarlanabilir ısı özellikli elektrikli ızgara.\",\n    \"price\": 4999,\n    \"categories\": [\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Korkmaz Çay Makinesi\",\n    \"description\": \"Çelik gövdeli otomatik çay makinesi.\",\n    \"price\": 3299,\n    \"categories\": [\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Samsung Galaxy S26\",\n    \"description\": \"Güncel nesil yüksek performanslı Samsung akıllı telefon.\",\n    \"price\": 59999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"iPhone 17\",\n    \"description\": \"Apple tarafından üretilen güncel nesil akıllı telefon.\",\n    \"price\": 74999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"MacBook Air M4\",\n    \"description\": \"Apple M4 işlemcili ince ve hafif dizüstü bilgisayar.\",\n    \"price\": 69999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Lenovo IdeaPad 5\",\n    \"description\": \"Günlük kullanım ve ofis işleri için dizüstü bilgisayar.\",\n    \"price\": 32999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"ASUS TUF Gaming Laptop\",\n    \"description\": \"Oyuncular için güçlü ekran kartına sahip dizüstü bilgisayar.\",\n    \"price\": 54999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Sony WH-1000XM6 Kulaklık\",\n    \"description\": \"Aktif gürültü engelleme özellikli kablosuz kulaklık.\",\n    \"price\": 18999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Apple AirPods Pro\",\n    \"description\": \"Aktif gürültü engelleme özellikli kablosuz kulaklık.\",\n    \"price\": 10999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"LG 65 İnç OLED TV\",\n    \"description\": \"65 inç OLED panel ve 4K çözünürlük sunan akıllı televizyon.\",\n    \"price\": 69999,\n    \"categories\": [\n      { \"id\": 2 },\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"PlayStation 5 Slim\",\n    \"description\": \"Yeni nesil oyun konsolu ve yüksek performanslı eğlence sistemi.\",\n    \"price\": 32999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Xbox Series X\",\n    \"description\": \"Microsoft'un yüksek performanslı yeni nesil oyun konsolu.\",\n    \"price\": 29999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Canon EOS Fotoğraf Makinesi\",\n    \"description\": \"Hobi ve profesyonel kullanım için değiştirilebilir lensli fotoğraf makinesi.\",\n    \"price\": 45999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"DJI Mini Drone\",\n    \"description\": \"Kompakt gövdeli, kameralı ve taşınabilir drone.\",\n    \"price\": 28999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Apple iPad Air\",\n    \"description\": \"Günlük kullanım ve profesyonel işler için güçlü tablet.\",\n    \"price\": 31999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Samsung Galaxy Tab\",\n    \"description\": \"Büyük ekranlı Android tablet bilgisayar.\",\n    \"price\": 19999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Roborock Qrevo Robot Süpürge\",\n    \"description\": \"Akıllı haritalama, süpürme ve paspas özellikli robot süpürge.\",\n    \"price\": 37999,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Dreame X40 Ultra\",\n    \"description\": \"Otomatik istasyonlu üst segment robot süpürge.\",\n    \"price\": 34552,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Xiaomi Vacuum S40 Pro\",\n    \"description\": \"Akıllı navigasyon ve güçlü emiş özellikli robot süpürge.\",\n    \"price\": 15245,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Philips HomeRun Robot Süpürge\",\n    \"description\": \"Süpürme ve paspas özellikli akıllı temizlik robotu.\",\n    \"price\": 25999,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Dyson Robot Süpürge\",\n    \"description\": \"Premium segment akıllı robot süpürge ve temizlik sistemi.\",\n    \"price\": 45649,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Renault Clio 1.0 TCe\",\n    \"description\": \"2022 model, benzinli ve otomatik şehir otomobili.\",\n    \"price\": 899000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Fiat Egea 1.4 Fire\",\n    \"description\": \"2021 model, benzinli ve manuel sedan otomobil.\",\n    \"price\": 735000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Toyota Corolla 1.5 Vision\",\n    \"description\": \"2022 model, benzinli ve otomatik sedan otomobil.\",\n    \"price\": 1095000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Volkswagen Golf 1.5 TSI\",\n    \"description\": \"2021 model, otomatik vitesli ve benzinli hatchback.\",\n    \"price\": 1195000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Renault Megane 1.3 TCe\",\n    \"description\": \"2022 model, otomatik vitesli benzinli sedan.\",\n    \"price\": 1099000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Peugeot 3008 1.5 BlueHDi\",\n    \"description\": \"2021 model, dizel ve otomatik SUV otomobil.\",\n    \"price\": 1275000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Hyundai i20 1.4 MPI\",\n    \"description\": \"2022 model, benzinli ve otomatik şehir otomobili.\",\n    \"price\": 849000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Dacia Duster 1.5 Blue dCi\",\n    \"description\": \"2021 model, dizel ve manuel SUV otomobil.\",\n    \"price\": 995000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Ford Focus 1.5 EcoBlue\",\n    \"description\": \"2021 model, dizel ve otomatik sedan otomobil.\",\n    \"price\": 1049000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Nissan Qashqai 1.3 DIG-T\",\n    \"description\": \"2022 model, benzinli otomatik SUV.\",\n    \"price\": 1395000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Honda Civic 1.5 VTEC\",\n    \"description\": \"2021 model, benzinli ve otomatik sedan.\",\n    \"price\": 1199000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Kia Sportage 1.6 CRDi\",\n    \"description\": \"2021 model, dizel ve otomatik SUV.\",\n    \"price\": 1325000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Skoda Octavia 1.5 TSI\",\n    \"description\": \"2022 model, benzinli ve otomatik sedan.\",\n    \"price\": 1249000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Mercedes A180\",\n    \"description\": \"2020 model, otomatik vitesli premium hatchback.\",\n    \"price\": 1599000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"BMW 320i\",\n    \"description\": \"2020 model, otomatik vitesli premium sedan.\",\n    \"price\": 1849000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Audi A3 Sedan\",\n    \"description\": \"2021 model, otomatik vitesli premium sedan.\",\n    \"price\": 1499000,\n    \"categories\": [\n      { \"id\": 3 }\n    ]\n  },\n  {\n    \"title\": \"Tesla Model 3\",\n    \"description\": \"Elektrikli ve otomatik vitesli modern sedan otomobil.\",\n    \"price\": 1699000,\n    \"categories\": [\n      { \"id\": 3 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"BYD Atto 3\",\n    \"description\": \"Elektrikli SUV sınıfında modern ve teknolojik otomobil.\",\n    \"price\": 1499000,\n    \"categories\": [\n      { \"id\": 3 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Togg T10X\",\n    \"description\": \"Türkiye üretimi elektrikli SUV otomobil.\",\n    \"price\": 1799000,\n    \"categories\": [\n      { \"id\": 3 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Arçelik Akıllı Klima\",\n    \"description\": \"Wi-Fi kontrollü inverter klima sistemi.\",\n    \"price\": 28999,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Samsung Akıllı Buzdolabı\",\n    \"description\": \"Akıllı özelliklere sahip geniş hacimli buzdolabı.\",\n    \"price\": 54999,\n    \"categories\": [\n      { \"id\": 1 },\n      { \"id\": 2 }\n    ]\n  },\n  {\n    \"title\": \"Philips OLED Ambilight TV\",\n    \"description\": \"Ambilight özellikli 4K OLED akıllı televizyon.\",\n    \"price\": 59999,\n    \"categories\": [\n      { \"id\": 2 },\n      { \"id\": 1 }\n    ]\n  },\n  {\n    \"title\": \"Apple Watch Series\",\n    \"description\": \"Akıllı saat ve sağlık takip özelliklerine sahip giyilebilir teknoloji.\",\n    \"price\": 18999,\n    \"categories\": [\n      { \"id\": 2 }\n    ]\n  }\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/api/product/saveAll",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "product",
+            "saveAll"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/api/product/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "product",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product Search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/api/product/search?q=a&page=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "product",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "a"
+            },
+            {
+              "key": "page",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product One",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/api/product/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "product",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/api/product/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "product",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product Update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Dyson Dikey Süpürge\",\n    \"description\": \"Kablosuz ve güçlü emiş özellikli dikey süpürge.\",\n    \"price\": 13999,\n    \"categories\": [\n        {\"id\": 1},\n        {\"id\": 3}\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/api/product/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "product",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
